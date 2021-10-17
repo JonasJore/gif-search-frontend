@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Gif from './Gif';
 
-
 const RenderGifs = ({ isLoading, gifs }) => {
   if (isLoading) {
     return (
@@ -32,7 +31,7 @@ const RenderGifs = ({ isLoading, gifs }) => {
       <div className="flex x-sm:flex-col flex-row flex-wrap justify-center mt-4 bg-yellow-400">
         {
           gifs.map((gif, index) =>
-            <Gif index={index} url={gif.images.fixed_height.url} key={index * 3.14} />
+            <Gif index={index} url={gif.images.fixed_height.url} key={index} />
           )
         }
       </div>
