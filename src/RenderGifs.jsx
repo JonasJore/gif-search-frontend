@@ -43,7 +43,7 @@ const RenderGifs = ({ isLoading, gifs }) => {
 
 RenderGifs.propTypes = {
   isLoading: PropTypes.bool.isRequired,
-  gifs: PropTypes.array.isRequired
+  gifs: PropTypes.array
 }
 
 export default RenderGifs;
